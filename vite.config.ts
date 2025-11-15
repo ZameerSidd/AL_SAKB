@@ -1,10 +1,14 @@
 
-  import { defineConfig } from 'vite';
-  import react from '@vitejs/plugin-react-swc'; 
-  import path from 'path';
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react-swc';
+import path from 'path';
+
+// Detect if you’re deploying to GitHub Pages or using a custom domain
+const isCustomDomain = process.env.CUSTOM_DOMAIN === 'true';
+const basePath = isCustomDomain ? '/' : '/AL_SAKB/';
 
   export default defineConfig({
-    base: '/AL_SAKB/',
+    base: basePath,
     plugins: [react()],
     resolve: {
       extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
