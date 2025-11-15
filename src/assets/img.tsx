@@ -6,13 +6,14 @@
 // };
 
 const getAssetPath = (path: string) => {
-  let baseUrl = '/';
+  let baseUrl = 'https://www.alsakb.in/';
   if (window.location.hostname === 'localhost') {
-    baseUrl = '/AL_SAKB/';
+    baseUrl = '/';
   }
   return `${baseUrl}${path}`;
 };
 
+//
 
 // Carousel Hero Images
 export const allImages = {
