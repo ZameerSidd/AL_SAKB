@@ -6,9 +6,9 @@
 // };
 
 const getAssetPath = (path: string) => {
-  let baseUrl = 'https://www.alsakb.in/';
+  let baseUrl = 'https://www.alsakb.in';
   if (window.location.hostname === 'localhost') {
-    baseUrl = '/';
+    baseUrl = 'localhost';
   }
   return `${baseUrl}${path}`;
 };
