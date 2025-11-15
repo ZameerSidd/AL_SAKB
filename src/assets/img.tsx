@@ -1,9 +1,19 @@
 
+// const getAssetPath = (path: string) => {
+//   const baseUrl = typeof import.meta !== 'undefined' && (import.meta as any).env ? (import.meta as any).env.BASE_URL || '/' : '/AL_SAKB/';
+//   // const baseUrl = typeof import.meta !== 'undefined' && (import.meta as any).env ? (import.meta as any).env.BASE_URL || '/' : '/';
+//   return `${baseUrl}${path}`;
+// };
+
 const getAssetPath = (path: string) => {
-  const baseUrl = typeof import.meta !== 'undefined' && (import.meta as any).env ? (import.meta as any).env.BASE_URL || '/' : '/AL_SAKB/';
-  // const baseUrl = typeof import.meta !== 'undefined' && (import.meta as any).env ? (import.meta as any).env.BASE_URL || '/' : '/';
+  let baseUrl = '/';
+  if (window.location.hostname === 'localhost') {
+    baseUrl = '/AL_SAKB/';
+  }
   return `${baseUrl}${path}`;
 };
+
+
 // Carousel Hero Images
 export const allImages = {
   internationalTrade: getAssetPath("/assets/images/international_trade.jpeg"),
