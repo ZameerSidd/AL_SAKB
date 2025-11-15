@@ -8,7 +8,8 @@ const isCustomDomain = process.env.CUSTOM_DOMAIN === 'true';
 const basePath = isCustomDomain ? '/' : '/AL_SAKB/';
 
   export default defineConfig({
-    base: basePath,
+    // base: basePath,
+    base: '/',
     plugins: [react()],
     resolve: {
       extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
