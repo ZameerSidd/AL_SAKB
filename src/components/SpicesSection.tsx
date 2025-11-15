@@ -1,30 +1,32 @@
 import { motion } from "motion/react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
+import { allImages } from "../assets/img";
+
 
 const spices = [
   {
     name: "Turmeric",
-    image: "https://images.unsplash.com/photo-1698556735172-1b5b3cd9d2ce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0dXJtZXJpYyUyMHNwaWNlJTIwcG93ZGVyfGVufDF8fHx8MTc2MzEwNzE4OHww&ixlib=rb-4.1.0&q=80&w=1080",
+    image: allImages.turmeric,
     description: "Premium golden turmeric powder"
   },
   {
     name: "Cumin",
-    image: "https://images.unsplash.com/photo-1600791102844-208e695205f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjdW1pbiUyMHNlZWRzJTIwc3BpY2V8ZW58MXx8fHwxNzYzMTM1NTg1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    image: allImages.aromatic,
     description: "Aromatic cumin seeds"
   },
   {
     name: "Coriander",
-    image: "https://images.unsplash.com/photo-1608797178894-bf7c596932da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb3JpYW5kZXIlMjBzZWVkcyUyMHNwaWNlfGVufDF8fHx8MTc2MzEzNTU4NXww&ixlib=rb-4.1.0&q=80&w=1080",
+    image: allImages.coriander,
     description: "Fresh coriander seeds"
   },
   {
     name: "Black Pepper",
-    image: "https://images.unsplash.com/photo-1649951806971-ad0e00408773?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxibGFjayUyMHBlcHBlciUyMHNwaWNlfGVufDF8fHx8MTc2MzEwMDMwMHww&ixlib=rb-4.1.0&q=80&w=1080",
+    image: allImages.blackPepper,
     description: "Bold black pepper"
   },
   {
     name: "Cardamom",
-    image: "https://images.unsplash.com/photo-1592501054695-053ef5884468?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjYXJkYW1vbSUyMHNwaWNlJTIwcG9kc3xlbnwxfHx8fDE3NjMwNDIwOTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image: allImages.cardamom,
     description: "Premium cardamom pods"
   }
 ];

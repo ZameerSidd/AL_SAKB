@@ -7,37 +7,38 @@ import { allImages } from "../assets/img";
 
 const carouselSlides = [
   {
-    image: "https://images.unsplash.com/photo-1613062007442-5df3601c94e3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb2xvcmZ1bCUyMHNwaWNlcyUyMGJvd2xzfGVufDF8fHx8MTc2MzEzNjYzOXww&ixlib=rb-4.1.0&q=80&w=1080",
+    image: allImages.colorfulSpices,
     alt: "Colorful Spices",
     title: "Diverse Product Range",
     description: "A vibrant collection of aromatic spices and seasonings for global markets"
   },
+
   {
-    image: "https://images.unsplash.com/photo-1558458654-a145c979a342?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzcGljZXMlMjBtYXJrZXQlMjBpbmRpYXxlbnwxfHx8fDE3NjMxMzY2Mzl8MA&ixlib=rb-4.1.0&q=80&w=1080",
-    alt: "Spices Market",
-    title: "Premium Quality Spices",
-    description: "Sourced directly from the finest regions, our spices bring authentic flavors to your business"
-  },
-  {
-    image: "https://images.unsplash.com/photo-1738680981649-3f81bdfe225d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzcGljZXMlMjBtYXJrZXQlMjBjb2xvcmZ1bHxlbnwxfHx8fDE3NjMwOTU3MjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image: allImages.traditionalExcellence,
     alt: "Spices Collection",
     title: "Traditional Excellence",
     description: "Preserving traditional methods while meeting international quality standards"
   },
   {
-    image: "https://images.unsplash.com/photo-1759141936083-d10203b4d4f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxvcmdhbmljJTIwc3BpY2VzJTIwaGVyYnN8ZW58MXx8fHwxNzYzMTM2NjQyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+    image: allImages.organicSpices,
     alt: "Organic Spices",
     title: "Organic & Natural",
     description: "Certified organic herbs and spices for health-conscious consumers worldwide"
   },
   {
-    image: "https://images.unsplash.com/photo-1620306677888-10e367e6293d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxleHBvcnQlMjBzaGlwcGluZyUyMGNvbnRhaW5lcnN8ZW58MXx8fHwxNzYzMDUyOTUyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+    image: allImages.exportShipping,
     alt: "Export Shipping",
     title: "Global Logistics Network",
     description: "Reliable shipping and delivery solutions to destinations across the world"
   },
   {
-    image: "https://images.unsplash.com/photo-1566576721346-d4a3b4eaeb55?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbnRlcm5hdGlvbmFsJTIwdHJhZGUlMjBidXNpbmVzc3xlbnwxfHx8fDE3NjMxMzY2NDJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image: allImages.spicesMarket,
+    alt: "Spices Market",
+    title: "Premium Quality Spices",
+    description: "Sourced directly from the finest regions, our spices bring authentic flavors to your business"
+  },
+  {
+    image: allImages.internationalTrade,
     alt: "International Trade",
     title: "Trusted Trading Partner",
     description: "Building strong partnerships with businesses across international markets"
