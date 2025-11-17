@@ -9,7 +9,7 @@ const basePath = isCustomDomain ? '/' : '/AL_SAKB/';
 
   export default defineConfig({
     // base: basePath,
-    // base: '',
+    base: '',
     plugins: [react()],
     resolve: {
       extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
