@@ -1,47 +1,56 @@
 import { motion } from "motion/react";
 import { Hammer, Wheat, Cog, Shirt, Smartphone, Car, Building } from "lucide-react";
+import{ allImages} from "../assets/img";
+
 
 const categories = [
   {
     icon: Hammer,
     title: "Metals & Minerals",
-    color: "from-[#5a7a7d] to-[#0D5257]"
+    color: "from-[#5a7a7d] to-[#0D5257]",
+    image: allImages.MetalsAndMinerals
   },
   {
     icon: Wheat,
     title: "Agriculture & Food Products",
-    color: "from-[#C8102E] to-[#a00d25]"
+    color: "from-[#C8102E] to-[#a00d25]",
+    image: allImages.AgricultureAndFoodProducts
   },
   {
     icon: Cog,
     title: "Machinery Equipment",
-    color: "from-[#0D5257] to-[#083a3d]"
+    color: "from-[#0D5257] to-[#083a3d]",
+    image: allImages.MachineryEquipment
   },
   {
     icon: Shirt,
     title: "Textiles & Apparel",
-    color: "from-[#C8102E] to-[#0D5257]"
+    color: "from-[#C8102E] to-[#0D5257]",
+    image: allImages.TextilesAndApparel
   },
   {
     icon: Smartphone,
     title: "Consumer Goods & Electronics",
-    color: "from-[#1a6d73] to-[#0D5257]"
+    color: "from-[#1a6d73] to-[#0D5257]",
+    image: allImages.ConsumerGoodsAndElectronics
   },
   {
     icon: Car,
     title: "Automotive & Spare Parts",
-    color: "from-[#C8102E] to-[#8b0d20]"
+    color: "from-[#C8102E] to-[#8b0d20]",
+    image: allImages.AutomotiveAndSpareParts
   },
   {
     icon: Building,
     title: "Construction Materials",
-    color: "from-[#0D5257] to-[#C8102E]"
+    color: "from-[#0D5257] to-[#C8102E]",
+    image: allImages.ConstructionMaterials
   }
 ];
 
 export function ExpertiseSection() {
   return (
-    <section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8 bg-white">
+    <section id="expertise" className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -68,12 +77,26 @@ export function ExpertiseSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.08 }}
-              className="group relative overflow-hidden rounded-xl p-6 sm:p-8 bg-gradient-to-br from-[#f9fafa] to-white border border-[#0D5257]/10 hover:shadow-lg transition-all duration-300 cursor-pointer"
+              className="group relative overflow-hidden rounded-xl cursor-pointer h-48 sm:h-64 md:h-72"
             >
-              <div className={`inline-flex p-3 sm:p-4 rounded-xl bg-gradient-to-br ${category.color} mb-3 sm:mb-4 group-hover:scale-110 transition-transform duration-300`}>
-                <category.icon className="h-6 w-6 sm:h-8 sm:w-8 text-white" />
+              {/* Background Image */}
+              <div className="absolute inset-0">
+                <img
+                  src={category.image}
+                  alt={category.title}
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                {/* Gradient Overlay */}
+                <div className={`absolute inset-0 bg-gradient-to-t ${category.color} opacity-80 group-hover:opacity-90 transition-opacity duration-300`} />
               </div>
-              <h3 className="text-[#0D5257] text-sm sm:text-base">{category.title}</h3>
+
+              {/* Content */}
+              <div className="relative h-full flex flex-col items-center justify-center p-4 sm:p-6 md:p-8 text-center">
+                <div className="p-3 sm:p-4 rounded-xl bg-white/20 backdrop-blur-sm mb-2 sm:mb-3 md:mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <category.icon className="h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8 text-white" />
+                </div>
+                <h3 className="text-white text-xs sm:text-sm md:text-base drop-shadow-lg">{category.title}</h3>
+              </div>
             </motion.div>
           ))}
         </div>

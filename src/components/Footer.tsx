@@ -17,7 +17,7 @@ const socialLinks = [
 
 export function Footer() {
   return (
-    <footer className="bg-gradient-to-br from-[#0D5257] to-[#083a3d] text-white">
+    <footer id="contact" className="bg-gradient-to-br from-[#0D5257] to-[#083a3d] text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 lg:gap-12 mb-8 sm:mb-12">
           {/* Company Info */}
@@ -57,25 +57,32 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <Mail className="h-5 w-5 text-[#C8102E] mt-0.5 flex-shrink-0" />
                 <a
-                  href="mailto:info@alsakb.com"
+                  href="mailto:contact@alsakbtrading.com"
                   className="text-white/70 hover:text-[#C8102E] transition-colors duration-200 text-sm sm:text-base break-all"
                 >
-                  info@alsakb.com
+                  contact@alsakbtrading.com
                 </a>
               </li>
               <li className="flex items-start gap-3">
                 <Phone className="h-5 w-5 text-[#C8102E] mt-0.5 flex-shrink-0" />
-                <a
-                  href="tel:+1234567890"
-                  className="text-white/70 hover:text-[#C8102E] transition-colors duration-200 text-sm sm:text-base"
-                >
-                  +1 (234) 567-890
-                </a>
+                <div className="text-white/70 text-sm sm:text-base space-y-1">
+                  <a href="tel:+966509776071" className="block hover:text-[#C8102E] transition-colors duration-200">
+                    +966 50 977 6071 
+                  </a>
+                  <a href="tel:+919920956927" className="block hover:text-[#C8102E] transition-colors duration-200">
+                    +91 99209 56927
+                  </a>
+                  <a href="tel:+917738222401" className="block hover:text-[#C8102E] transition-colors duration-200">
+                    +91 77382 22401
+                  </a>
+                </div>
               </li>
               <li className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-[#C8102E] mt-0.5 flex-shrink-0" />
                 <span className="text-white/70 text-sm sm:text-base">
-                  Global Trading Hub<br />International Business District
+                  75 kambekar street, Whadina Building<br />
+                  1th Floor, Mumbai - 400003<br />
+                  Maharashtra, India
                 </span>
               </li>
             </ul>
@@ -102,7 +109,7 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="pt-6 sm:pt-8 border-t border-white/10 text-center">
           <p className="text-white/60 text-xs sm:text-sm">
-            © {new Date().getFullYear()} AL SAKB EXPORT IMPORT LLP. All rights reserved.
+            © {new Date().getFullYear()} AL SAKB TRADING LLP. All rights reserved.
           </p>
         </div>
       </div>
