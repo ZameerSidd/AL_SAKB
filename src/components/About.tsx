@@ -21,7 +21,7 @@ const features = [
 
 export function About() {
   return (
-    <section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8 bg-white">
+    <section id="about" className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -33,7 +33,7 @@ export function About() {
           <h2 className="text-3xl sm:text-4xl md:text-5xl mb-4 sm:mb-6 text-[#0D5257]">About Us</h2>
           <div className="w-16 sm:w-20 h-1 bg-gradient-to-r from-[#C8102E] to-[#0D5257] mx-auto mb-6 sm:mb-8" />
           <p className="max-w-3xl mx-auto text-[#5a7a7d] text-sm sm:text-base px-4">
-            AL SAKB EXPORT IMPORT LLP ensures quality, competitive pricing, and reliable global logistics.
+            AL SAKB TRADING LLP ensures quality, competitive pricing, and reliable global logistics.
             With a strong network of partners, we help businesses expand across international markets
             with ease and efficiency.
           </p>
